@@ -96,32 +96,85 @@ return false;
   </head>
   <body background="https://entertainment-rick.coffeecup.com/background.jpg">
     
-    <nav>
-        <div class="nav-center">
-          <!-- nav header -->
-          <div class="nav-header">
-            <img src="https://i.postimg.cc/RCPG4z8R/LIFESCINEC.png" class="logo" alt="logo" />>
-            <button class="nav-toggle">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
-          <!-- links -->
-          <ul class="links">
-            <li>
-              <a href="learning-lifescience.html">home</a>
-            </li>
-            <li>
-              <a href="#Videos">Videos</a>
-            </li>
-            <li>
-              <a href="projects.html">Text-Class Work</a>
-            </li>
-            <li>
-              <a href="homework.html">Homework</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      
    
-    </body>
+    <div class="area"></div><nav class="main-menu">
+      <ul>
+          <li>
+              <a href="#">
+                  <i class="fa fa-home fa-2x"></i>
+                  <span class="nav-text">
+                     Home
+                  </span>
+              </a>
+            
+          </li>
+          <li class="has-subnav">
+              <a href="#">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-camera-video lying" viewBox="0 0 18 20">
+<path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+</svg>
+                  <span class="nav-text">
+                     Videos
+                  </span>
+              </a>
+              
+          </li>
+
+          <li>
+             <a href="#">
+                 <i class="fa fa-table fa-2x"></i>
+                  <span class="nav-text">
+                      Text-ClassWork
+                  </span>
+              </a>
+          </li>
+    
+          <li>
+              <a href="#">
+                 <i class="fa fa-info fa-2x"></i>
+                  <span class="nav-text">
+                     Homework
+                  </span>
+              </a>
+          </li>
+      </ul>
+  </nav>
+
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
